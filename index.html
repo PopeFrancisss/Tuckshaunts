@@ -8,14 +8,29 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      /* BACKGROUND IMAGE HERE */
+      background: url('Banner.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .banner {
+      height: 15vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
     }
 
     .container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 50vh);
+      grid-template-rows: repeat(2, 42.5vh);
       width: 100vw;
-      height: 100vh;
+      height: 85vh;
     }
 
     .card {
@@ -51,6 +66,9 @@
   </style>
 </head>
 <body>
+
+<!-- BANNER TEXT HERE -->
+<div class="banner">Your Store Name</div>
 
 <div class="container">
 
