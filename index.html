@@ -13,28 +13,28 @@
       background-size: cover;
     }
 
-    /* ORANGE BANNER (KEPT) */
+    /* ORANGE BANNER */
     .banner {
       height: 15vh;
       width: 100%;
-      background: orange; /* your orange bar */
+      background: orange;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    /* FIXED IMAGE (NO BOX) */
     .banner img {
       max-height: 100%;
       max-width: 80%;
       object-fit: contain;
-      /* NO BACKGROUND HERE */
     }
 
-    /* GRID */
+    /* 🔥 FORCED 4x2 GRID */
     .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 42.5vh);
+      width: 100vw;
       height: 85vh;
       gap: 10px;
       padding: 10px;
@@ -76,7 +76,6 @@
       color: #00ff88;
     }
 
-    /* BUTTON */
     .buy-btn {
       margin-top: 8px;
       padding: 6px 10px;
