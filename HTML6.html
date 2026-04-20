@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item 6</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    /* TOP BAR */
+    .top {
+      padding: 15px;
+      background: orange;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back {
+      background: black;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* MAIN LAYOUT */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .image-box {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .image-box img {
+      width: 100%;
+      border-radius: 10px;
+      background: black;
+    }
+
+    .info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 22px;
+      color: #00ff88;
+      margin-bottom: 20px;
+    }
+
+    .buy {
+      padding: 12px 20px;
+      background: #00ff88;
+      border: none;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .buy:hover {
+      background: #00cc6a;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="top">
+  <button class="back" onclick="location.href='index.html'">⬅ Back</button>
+  <div>Product Page</div>
+</div>
+
+<div class="container">
+
+  <div class="image-box">
+    <img src="prop6.png">
+  </div>
+
+  <div class="info">
+    <div class="title">Item 6</div>
+    <div class="price">$10</div>
+    <p>
+      This is a description of the item. You can put details here like size, features, or anything you want.
+    </p>
+
+    <button class="buy">Buy Now</button>
+  </div>
+
+</div>
+
+</body>
+</html>
