@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Shop</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('YOUR_BACKGROUND_IMAGE_HERE') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* 🔥 IMAGE BANNER (NO CSS BACKGROUND) */
+    .banner {
+      height: 15vh;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    /* OPTIONAL LOGO ON TOP */
+    .banner-logo {
+      position: relative;
+      z-index: 2;
+      max-height: 80%;
+      max-width: 60%;
+      display: block;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    /* 4x2 GRID */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 42.5vh);
+      width: 100vw;
+      height: 85vh;
+      gap: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: black;
+    }
+
+    .info {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .price {
+      margin-top: 5px;
+      color: #00ff88;
+    }
+
+    .buy-btn {
+      margin-top: 8px;
+      padding: 6px 10px;
+      background: #00ff88;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .buy-btn:hover {
+      background: #00cc6a;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 🔥 BANNER USING IMAGE -->
+<div class="banner">
+  <img src="prop1.png" class="banner-bg">
+  <img src="ban.png" class="banner-logo">
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <img src="prop1.png">
+    <div class="info">
+      <div class="name">Item 1</div>
+      <div class="price">$10</div>
+      <button class="buy-btn" onclick="location.href='HTML1.html'">View</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="prop2.png">
+    <div class="info">
+      <div class="name">Item 2</div>
+      <div class="price">$15</div>
+      <button class="buy-btn" onclick="location.href='HTML2.html'">View</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="prop3.png">
+    <div class="info">
+      <div class="name">Item 3</div>
+      <div class="price">$20</div>
+      <button class="buy-btn" onclick="location.href='HTML3.html'">View</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="prop4.png">
+    <div class="info">
+      <div class="name">Item 4</div>
+      <div class="price">$25</div>
+      <button class="buy-btn" onclick="location.href='HTML4.html'">View</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="prop5.png">
+    <div class="info">
+      <div class="name">Item 5</div>
+      <div class="price">$30</div>
+      <button class="buy-btn" onclick="location.href='HTML5.html'">View</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="prop6.png">
+    <div class="info">
+      <div class="name">Item 6</div>
+      <div class="price">$35</div>
+      <button class="buy-btn" onclick="location.href='HTML6.html'">View</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="prop7.png">
+    <div class="info">
+      <div class="name">Item 7</div>
+      <div class="price">$40</div>
+      <button class="buy-btn" onclick="location.href='HTML7.html'">View</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="prop8.png">
+    <div class="info">
+      <div class="name">Item 8</div>
+      <div class="price">$45</div>
+      <button class="buy-btn" onclick="location.href='HTML8.html'">View</button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
